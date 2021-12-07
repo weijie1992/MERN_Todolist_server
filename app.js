@@ -33,7 +33,7 @@ initDb(async (err, db) => {
     app.use("/api", userRoutes);
     //handle errors
 
-    app.listen(4001);
+    app.listen(8000);
     console.log("Express Server started on port : 4001");
   } //end else
 });

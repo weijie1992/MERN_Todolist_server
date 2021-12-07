@@ -170,7 +170,7 @@ exports.loginViaPasswordController = async (req, res) => {
 
         //generate jwt
         const token = jwt.sign({ email }, process.env.JWT_LOGIN, {
-          expiresIn: "1m",
+          expiresIn: "7d",
         });
 
         return res.json({ token });
